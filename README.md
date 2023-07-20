@@ -1,5 +1,26 @@
-# GreenEfficiency - Optimizing Energy Consumption for Buildings
+<h1 align="center">
+  GreenEfficiency - Optimizing Energy Consumption for Buildings
+  <br><br>
+<a href="https://twitter.com/c72124925" alt="Twitter Follow">
+<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/deepakchoudhary2003/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://github.com/Deepak-Choudhary0">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+</h1>
+
 GreenEfficiency is a web application built with Next.js, React, Chakra UI, and TypeScript that enables users to optimize energy consumption for buildings. It utilizes machine learning with Python, Flask, scikit-learn, pandas, and NumPy to provide personalized energy efficiency predictions based on user-uploaded CSV files containing energy consumption data.
+
+## Authors
+
+- [@Deepak-Choudhary](https://github.com/Deepak-Choudhary0/)
+
+## Tech Stack
+- Frontend: Next.js, React, Chakra UI, TypeScript
+
+- Backend: Flask (Python) , Pickle (Python)
+
+- Machine Learning: scikit-learn, pandas, NumPy
 
 ## Key Features
 - Upload Energy Consumption Data: Users can easily upload CSV files containing energy consumption data for lights and HVAC systems.
@@ -11,19 +32,12 @@ GreenEfficiency is a web application built with Next.js, React, Chakra UI, and T
 2. ### Upload ![Upload](https://github.com/Deepak-Choudhary0/greenefficiency/assets/114693662/7bd833d1-71fd-4c10-9f2e-7ae6dc24cc76)
 3. ### Graph ![Graph](https://github.com/Deepak-Choudhary0/greenefficiency/assets/114693662/6b0718c0-492a-4458-8845-aebc6c0058b0)
 
-## Tech Stack
-- Frontend: Next.js, React, Chakra UI, TypeScript
-
-- Backend: Flask (Python)
-
-- Machine Learning: scikit-learn, pandas, NumPy
-
 ## Data Format
 Please ensure that your CSV files have the required columns for lights and HVAC energy consumption data. The format should be compatible with the machine learning model's input requirements.
 
 
 ## Installation
--  Clone the repository: git clone https://github.com/your-username/GreenEfficiency.git
+-  Clone the repository: `git clone https://github.com/Deepak-Choudhary0/greenefficiency.git`
 
 ### Frontend 
 1. Go to directory `cd greenefficiency`
@@ -35,7 +49,11 @@ Please ensure that your CSV files have the required columns for lights and HVAC 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Backend
-1. Go to directory ``
+1. Go to directory `greenefficiency/src/py` for python backend files.
+2. The file named `app.py` have flask api endpoints and pickle to fetch ML model from file name `energy.py`.
+3. Run `energy.py` first  by following command `python3 energy.py` this will run the ml model and put that in pickle for furthur use.
+4. Now run the flask file named `app.py` by running command `python3 app.py` into terminal.
+5. When you run your Flask server locally for development, the default URL will be http://localhost:5000. The port number 5000 is commonly used for Flask applications in development mode.
 
 ## Learn More
 
